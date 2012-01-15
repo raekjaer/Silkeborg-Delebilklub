@@ -1,6 +1,4 @@
 /* This file will hold the main styles for your website. */
-/* Fonts */
-@font-face { font-family: "Fanwood"; src: url(../fonts/Fanwood.otf); }
 
 /* Base styling */
 body {
@@ -9,7 +7,7 @@ body {
     background-color: #fefefe;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Fanwood, Georgia, "Times New Roman", serif;
+    font-family: Georgia, "Times New Roman", serif;
     font-weight: normal;
     letter-spacing: normal;
 }
@@ -26,12 +24,13 @@ dd {
 }
 
 /* Header section */
-#region-branding {
+.region-branding-inner {
     border-left: 1px solid #313131;
     border-right: 1px solid #313131;
     background-color: #2E8D3F;
+    padding: 0 18px;
 }
-#region-menu {
+.region-menu-inner {
     border-left: 1px solid #313131;
     border-right: 1px solid #313131;
     border-bottom: 1px solid #313131;
@@ -45,19 +44,20 @@ dd {
 #zone-branding h1 a {
     text-decoration: none;
     color: #6DC07B;
-    margin: 0 0.2em 0 0.3em;
+    margin: 0;
     font-weight: normal;
     text-shadow: 2px 2px 5px rgba(22,22,22,0.4);
 }
 #zone-menu nav {
-    font-family: Fanwood, Georgia, "Times New Roman", serif;
-    font-size: 1.4em;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 137.5%;
 }
 #zone-menu nav ul li {
     margin: 0;
-    padding: 0.1em 1em;
+    padding: 3px 20px;
 }
-#zone-menu ul .active {
+#zone-menu ul .active,
+#zone-menu ul .active-trail {
     background: #2E8D3F;
     color: #6DC07B;
 }
@@ -73,9 +73,8 @@ dd {
 }
 
 /* Content section */
-.zone-content-inner {
-    margin-left: 10px;
-    margin-right: 10px;/*eller noget*/
+.region-content-inner {
+    padding: 0 18px;
 }
 #zone-content article header h1 {
     font-size: 200%;
@@ -90,7 +89,9 @@ dd {
     margin-bottom: 0;
 }
 
-
+.region-sidebar-second-inner {
+    padding-right: 18px;
+}
 #zone-content aside .block {
     border: 1px solid #313131;
     margin: 1em 0;
@@ -99,6 +100,7 @@ dd {
     border: none;
 }
 #zone-content aside h2.block-title {
+    color: #313131;
     background-color: #2E8D3F;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#2E8D3F), to(#6DC07B)); 
     background-image: -webkit-linear-gradient(top, #2E8D3F, #6DC07B); 
@@ -111,6 +113,9 @@ dd {
     margin: 0;
     font-size: 150%;
 }
+#zone-content aside h2.block-title a {
+    color: #313131;
+}
 #zone-content aside .content {
     margin: 0.6em;
 }
@@ -119,9 +124,12 @@ dd {
 /* Footer section */
 #zone-footer {
     text-align: center;
-    background: #6DC07B;
-    border: 1px solid #313131;
 }
 #zone-footer a {
     color: #313131;
+}
+.region-footer-first-inner {
+    background: #6DC07B;
+    border: 1px solid #313131;
+    padding: 0 18px;
 }
