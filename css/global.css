@@ -115,6 +115,7 @@ dd {
 }
 #zone-content aside h2.block-title a {
     color: #313131;
+    text-decoration: none;
 }
 #zone-content aside .content {
     margin: 0.6em;
@@ -131,5 +132,5 @@ dd {
 .region-footer-first-inner {
     background: #6DC07B;
     border: 1px solid #313131;
-    padding: 0 18px;
+    padding: 6px 18px;
 }
