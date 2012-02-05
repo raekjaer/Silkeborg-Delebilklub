@@ -1,0 +1,149 @@
+/* This file will hold the main styles for your website. */
+
+$main-color: #313131;
+$main-background: #fefefe;
+$light-color: #6DC07B;
+$dark-color: darken($light-color, 30%);
+
+/* Base styling */
+body {
+    font: 16px/1.5 Georgia, "Times New Roman", serif;
+    color: $main-color;
+    background-color: $main-background;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+a:link,
+a:visited,
+a:hover {
+    color: #4C9559;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-bottom: 0.4em;
+}
+
+/* Header section */
+.region-branding-inner {
+    border-left: 1px solid $main-color;
+    border-right: 1px solid $main-color;
+    background-color: $dark-color;
+    padding: 0 18px;
+}
+.region-menu-inner {
+    border-left: 1px solid $main-color;
+    border-right: 1px solid $main-color;
+    border-bottom: 1px solid $main-color;
+    background: $light-color;
+}
+#zone-branding {
+    h1 {
+        font-size: 400%;
+        padding: 0.2em 0;
+        margin: 0;
+        
+        a {
+            text-decoration: none;
+            color: $light-color;
+            margin: 0;
+            font-weight: normal;
+            text-shadow: 2px 2px 5px rgba(22,22,22,0.4);            
+        }   
+    }
+}
+
+#zone-menu {
+    nav {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 137.5%;
+        ul {
+            li {
+                margin: 0;
+                padding: 3px 20px;
+            }
+        }
+    }
+    
+    ul {
+        .active, .active-trail {
+            background: $dark-color;
+            color: $light-color;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: $main-color;
+        &:hover { color: $dark-color; }
+        &.active:hover { color: $light-color; }
+    }    
+}
+
+/* Content section */
+.region-content-inner {
+    padding: 0 18px;
+}
+.region-sidebar-second-inner {
+    padding-right: 18px;
+}
+
+#zone-content {
+    article {
+        header {
+            h1 { font-size: 200%; }
+        }
+        section {
+            h1 {
+                font-size: 150%;
+                margin: 1em 0 0;
+            }
+            h2 {
+                font-size: 130%;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    aside {
+        .block {
+            border: 1px solid $main-color;
+            margin: 1em 0;
+        }
+        .block-without-title { border: none; }
+        h2.block-title {
+            color: $main-color;
+            background-color: $dark-color;
+            background-image: -webkit-gradient(linear, left top, left bottom, from($dark-color), to($light-color)); 
+            background-image: -webkit-linear-gradient(top, $dark-color, $light-color); 
+            background-image:    -moz-linear-gradient(top, $dark-color, $light-color); 
+            background-image:     -ms-linear-gradient(top, $dark-color, $light-color); 
+            background-image:      -o-linear-gradient(top, $dark-color, $light-color); 
+            background-image:         linear-gradient(top, $dark-color, $light-color);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$dark-color', EndColorStr='$light-color'); 
+            padding: 0 0.4em;
+            margin: 0;
+            font-size: 150%;
+            a {
+                color: $main-color;
+                text-decoration: none;
+            }
+        }
+        .content { margin: 0.6em; }
+    }
+}
+
+/* Footer section */
+#zone-footer {
+    text-align: center;
+     a { color: $main-color; }
+}
+.region-footer-first-inner {
+    background: $light-color;
+    border: 1px solid $main-color;
+    padding: 6px 18px;
+}

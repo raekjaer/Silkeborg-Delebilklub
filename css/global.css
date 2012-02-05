@@ -1,136 +1,113 @@
 /* This file will hold the main styles for your website. */
-
 /* Base styling */
 body {
-    font: 16px/1.5 Georgia, "Times New Roman", serif;
-    color: #313131;
-    background-color: #fefefe;
-}
+  font: 16px/1.5 Georgia, "Times New Roman", serif;
+  color: #313131;
+  background-color: #fefefe; }
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-weight: normal;
-    letter-spacing: normal;
-}
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: normal; }
+
 a:link,
 a:visited,
 a:hover {
-    color: #4C9559;
-}
+  color: #4C9559; }
+
 dt {
-    font-weight: bold;
-}
+  font-weight: bold; }
+
 dd {
-    margin-bottom: 0.4em;
-}
+  margin-bottom: 0.4em; }
 
 /* Header section */
 .region-branding-inner {
-    border-left: 1px solid #313131;
-    border-right: 1px solid #313131;
-    background-color: #2E8D3F;
-    padding: 0 18px;
-}
+  border-left: 1px solid #313131;
+  border-right: 1px solid #313131;
+  background-color: #2d6737;
+  padding: 0 18px; }
+
 .region-menu-inner {
-    border-left: 1px solid #313131;
-    border-right: 1px solid #313131;
-    border-bottom: 1px solid #313131;
-    background: #6DC07B;
-}
+  border-left: 1px solid #313131;
+  border-right: 1px solid #313131;
+  border-bottom: 1px solid #313131;
+  background: #6dc07b; }
+
 #zone-branding h1 {
-    font-size: 400%;
-    padding: 0.2em 0;
-    margin: 0;
-}
-#zone-branding h1 a {
+  font-size: 400%;
+  padding: 0.2em 0;
+  margin: 0; }
+  #zone-branding h1 a {
     text-decoration: none;
-    color: #6DC07B;
+    color: #6dc07b;
     margin: 0;
     font-weight: normal;
-    text-shadow: 2px 2px 5px rgba(22,22,22,0.4);
-}
+    text-shadow: 2px 2px 5px rgba(22, 22, 22, 0.4); }
+
 #zone-menu nav {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 137.5%;
-}
-#zone-menu nav ul li {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 137.5%; }
+  #zone-menu nav ul li {
     margin: 0;
-    padding: 3px 20px;
-}
-#zone-menu ul .active,
-#zone-menu ul .active-trail {
-    background: #2E8D3F;
-    color: #6DC07B;
-}
+    padding: 3px 20px; }
+#zone-menu ul .active, #zone-menu ul .active-trail {
+  background: #2d6737;
+  color: #6dc07b; }
 #zone-menu a {
-    text-decoration: none;
-    color: #313131;
-}
-#zone-menu a:hover {
-    color: #2E8D3F;
-}
-#zone-menu a.active:hover {
-    color: #6DC07B;
-}
+  text-decoration: none;
+  color: #313131; }
+  #zone-menu a:hover {
+    color: #2d6737; }
+  #zone-menu a.active:hover {
+    color: #6dc07b; }
 
 /* Content section */
 .region-content-inner {
-    padding: 0 18px;
-}
-#zone-content article header h1 {
-    font-size: 200%;
-}
-
-#zone-content article section h1 {
-    font-size: 150%;
-    margin: 1em 0 0;
-}
-#zone-content article section h2 {
-    font-size: 130%;
-    margin-bottom: 0;
-}
+  padding: 0 18px; }
 
 .region-sidebar-second-inner {
-    padding-right: 18px;
-}
-#zone-content aside .block {
-    border: 1px solid #313131;
-    margin: 1em 0;
-}
-#zone-content aside .block-without-title {
-    border: none;
-}
-#zone-content aside h2.block-title {
-    color: #313131;
-    background-color: #2E8D3F;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2E8D3F), to(#6DC07B)); 
-    background-image: -webkit-linear-gradient(top, #2E8D3F, #6DC07B); 
-    background-image:    -moz-linear-gradient(top, #2E8D3F, #6DC07B); 
-    background-image:     -ms-linear-gradient(top, #2E8D3F, #6DC07B); 
-    background-image:      -o-linear-gradient(top, #2E8D3F, #6DC07B); 
-    background-image:         linear-gradient(top, #2E8D3F, #6DC07B);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#2E8D3F', EndColorStr='#6DC07B'); 
-    padding: 0 0.4em;
-    margin: 0;
-    font-size: 150%;
-}
-#zone-content aside h2.block-title a {
-    color: #313131;
-    text-decoration: none;
-}
-#zone-content aside .content {
-    margin: 0.6em;
-}
+  padding-right: 18px; }
 
+#zone-content article header h1 {
+  font-size: 200%; }
+#zone-content article section h1 {
+  font-size: 150%;
+  margin: 1em 0 0; }
+#zone-content article section h2 {
+  font-size: 130%;
+  margin-bottom: 0; }
+#zone-content aside .block {
+  border: 1px solid #313131;
+  margin: 1em 0; }
+#zone-content aside .block-without-title {
+  border: none; }
+#zone-content aside h2.block-title {
+  color: #313131;
+  background-color: #2d6737;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d6737), to(#6dc07b));
+  background-image: -webkit-linear-gradient(top, #2d6737, #6dc07b);
+  background-image: -moz-linear-gradient(top, #2d6737, #6dc07b);
+  background-image: -ms-linear-gradient(top, #2d6737, #6dc07b);
+  background-image: -o-linear-gradient(top, #2d6737, #6dc07b);
+  background-image: linear-gradient(top, #2d6737, #6dc07b);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$dark-color', EndColorStr='$light-color');
+  padding: 0 0.4em;
+  margin: 0;
+  font-size: 150%; }
+  #zone-content aside h2.block-title a {
+    color: #313131;
+    text-decoration: none; }
+#zone-content aside .content {
+  margin: 0.6em; }
 
 /* Footer section */
 #zone-footer {
-    text-align: center;
-}
-#zone-footer a {
-    color: #313131;
-}
+  text-align: center; }
+  #zone-footer a {
+    color: #313131; }
+
 .region-footer-first-inner {
-    background: #6DC07B;
-    border: 1px solid #313131;
-    padding: 6px 18px;
-}
+  background: #6dc07b;
+  border: 1px solid #313131;
+  padding: 6px 18px; }
