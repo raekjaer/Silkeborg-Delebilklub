@@ -25,7 +25,7 @@ dd {
 .region-branding-inner {
   border-left: 1px solid #313131;
   border-right: 1px solid #313131;
-  background-color: #2d6737;
+  background-color: #2e6b38;
   padding: 0 18px; }
 
 .region-menu-inner {
@@ -52,14 +52,14 @@ dd {
     margin: 0;
     padding: 3px 20px; }
 #zone-menu ul .active, #zone-menu ul .active-trail {
-  background: #2d6737;
+  background: #2e6b38;
   color: #6dc07b; }
 #zone-menu a {
   text-decoration: none;
   color: #313131; }
   #zone-menu a:hover {
-    color: #2d6737; }
-  #zone-menu a.active:hover {
+    color: #2e6b38; }
+  #zone-menu a.active:hover, #zone-menu a.active-trail:hover {
     color: #6dc07b; }
 
 /* Content section */
@@ -84,13 +84,13 @@ dd {
   border: none; }
 #zone-content aside h2.block-title {
   color: #313131;
-  background-color: #2d6737;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d6737), to(#6dc07b));
-  background-image: -webkit-linear-gradient(top, #2d6737, #6dc07b);
-  background-image: -moz-linear-gradient(top, #2d6737, #6dc07b);
-  background-image: -ms-linear-gradient(top, #2d6737, #6dc07b);
-  background-image: -o-linear-gradient(top, #2d6737, #6dc07b);
-  background-image: linear-gradient(top, #2d6737, #6dc07b);
+  background-color: #2e6b38;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e6b38), to(#6dc07b));
+  background-image: -webkit-linear-gradient(top, #2e6b38, #6dc07b);
+  background-image: -moz-linear-gradient(top, #2e6b38, #6dc07b);
+  background-image: -ms-linear-gradient(top, #2e6b38, #6dc07b);
+  background-image: -o-linear-gradient(top, #2e6b38, #6dc07b);
+  background-image: linear-gradient(top, #2e6b38, #6dc07b);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$dark-color', EndColorStr='$light-color');
   padding: 0 0.4em;
   margin: 0;
