@@ -80,7 +80,7 @@ dd {
         text-decoration: none;
         color: $main-color;
         &:hover { color: $dark-color; }
-        &.active:hover { color: $light-color; }
+        &.active:hover, &.active-trail:hover { color: $light-color; }
     }    
 }
 
