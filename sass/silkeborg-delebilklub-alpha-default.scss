@@ -1,1 +1,60 @@
 /* This file will hold styles that are loaded using the same media query as the narrow grid. */
+
+$main-color: #313131;
+$main-background: #fefefe;
+$light-color: #6DC07B;
+$dark-color: darken($light-color, 29%);
+
+#zone-branding {
+    h1 {
+        font-size: 400%;
+    }
+}
+
+#zone-menu {
+    nav {
+        font-size: 137.5%;
+        ul {
+            height: 1em;
+            li {
+                margin: 0;
+                padding: 6px 20px;
+                display: inline;
+                border: none;
+                width: auto;
+                height: 12px;
+                line-height: 12px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.region-content-inner {
+    padding: 0 18px;
+}
+.region-sidebar-second-inner {
+    padding-right: 18px;
+}
+
+#zone-content {
+    h1.title, h1.node-title {
+        font-size: 200%;
+    }
+    section {
+        h1 {
+            font-size: 150%;
+            margin: 1em 0 0;
+        }
+        h2 {
+            font-size: 130%;
+            margin-bottom: 0;
+        }
+    }
+    aside {
+        h2.block-title {
+            font-size: 150%;
+        }
+    }
+    
+}

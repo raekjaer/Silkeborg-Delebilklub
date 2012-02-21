@@ -35,7 +35,7 @@ dd {
   background: #6dc07b; }
 
 #zone-branding h1 {
-  font-size: 400%;
+  font-size: 200%;
   padding: 0.2em 0;
   margin: 0; }
   #zone-branding h1 a {
@@ -47,10 +47,17 @@ dd {
 
 #zone-menu nav {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 137.5%; }
+  font-size: 75%; }
   #zone-menu nav ul li {
-    margin: 0;
-    padding: 3px 20px; }
+    margin: 11px;
+    padding: 0;
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #2e6b38;
+    text-align: center;
+    vertical-align: middle; }
 #zone-menu ul .active, #zone-menu ul .active-trail {
   background: #2e6b38;
   color: #6dc07b; }
@@ -66,16 +73,13 @@ dd {
 .region-content-inner {
   padding: 0 18px; }
 
-.region-sidebar-second-inner {
-  padding-right: 18px; }
-
-#zone-content article header h1 {
-  font-size: 200%; }
-#zone-content article section h1 {
-  font-size: 150%;
-  margin: 1em 0 0; }
-#zone-content article section h2 {
+#zone-content h1.title, #zone-content h1.node-title {
+  font-size: 150%; }
+#zone-content section h1 {
   font-size: 130%;
+  margin: 1em 0 0; }
+#zone-content section h2 {
+  font-size: 110%;
   margin-bottom: 0; }
 #zone-content aside .block {
   border: 1px solid #313131;
@@ -94,7 +98,7 @@ dd {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$dark-color', EndColorStr='$light-color');
   padding: 0 0.4em;
   margin: 0;
-  font-size: 150%; }
+  font-size: 130%; }
   #zone-content aside h2.block-title a {
     color: #313131;
     text-decoration: none; }

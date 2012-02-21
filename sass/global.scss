@@ -43,7 +43,7 @@ dd {
 }
 #zone-branding {
     h1 {
-        font-size: 400%;
+        font-size: 200%;
         padding: 0.2em 0;
         margin: 0;
         
@@ -60,11 +60,18 @@ dd {
 #zone-menu {
     nav {
         font-family: Georgia, "Times New Roman", serif;
-        font-size: 137.5%;
+        font-size: 75%;
         ul {
             li {
-                margin: 0;
-                padding: 3px 20px;
+                margin: 11px;
+                padding: 0;
+                display: inline-block;
+                width: 75px;
+                height: 25px;
+                line-height: 25px;
+                border: 1px solid $dark-color;
+                text-align: center;
+                vertical-align: middle;
             }
         }
     }
@@ -87,24 +94,19 @@ dd {
 .region-content-inner {
     padding: 0 18px;
 }
-.region-sidebar-second-inner {
-    padding-right: 18px;
-}
 
 #zone-content {
-    article {
-        header {
-            h1 { font-size: 200%; }
+    h1.title, h1.node-title {
+        font-size: 150%;
+    }
+    section {
+        h1 {
+            font-size: 130%;
+            margin: 1em 0 0;
         }
-        section {
-            h1 {
-                font-size: 150%;
-                margin: 1em 0 0;
-            }
-            h2 {
-                font-size: 130%;
-                margin-bottom: 0;
-            }
+        h2 {
+            font-size: 110%;
+            margin-bottom: 0;
         }
     }
 
@@ -126,7 +128,7 @@ dd {
             filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$dark-color', EndColorStr='$light-color'); 
             padding: 0 0.4em;
             margin: 0;
-            font-size: 150%;
+            font-size: 130%;
             a {
                 color: $main-color;
                 text-decoration: none;
