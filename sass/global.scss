@@ -63,13 +63,13 @@ dd {
             li {
                 margin: 11px;
                 padding: 0;
-                display: inline-block;
                 width: 75px;
                 height: 25px;
                 line-height: 25px;
                 border: 1px solid $dark-color;
                 text-align: center;
                 vertical-align: middle;
+                float: left;
             }
         }
     }
@@ -117,7 +117,6 @@ dd {
     aside {
         .block {
             margin: 1em 0;
-/*            border: 1px solid $border-color;*/
             box-shadow: 2px 2px 3px rgba(22,22,22,0.4);;
         }
         h2.block-title {

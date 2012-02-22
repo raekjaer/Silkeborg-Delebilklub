@@ -48,13 +48,13 @@ dd {
     #zone-menu nav ul li {
       margin: 11px;
       padding: 0;
-      display: inline-block;
       width: 75px;
       height: 25px;
       line-height: 25px;
       border: 1px solid #2e6b38;
       text-align: center;
-      vertical-align: middle; }
+      vertical-align: middle;
+      float: left; }
   #zone-menu ul .active, #zone-menu ul .active-trail {
     background: #2e6b38;
     color: #6dc07b; }
@@ -88,7 +88,6 @@ dd {
     margin-bottom: 0; }
   #zone-content aside .block {
     margin: 1em 0;
-    /*            border: 1px solid $border-color;*/
     box-shadow: 2px 2px 3px rgba(22, 22, 22, 0.4); }
   #zone-content aside h2.block-title {
     color: #2e6b38;
