@@ -1,20 +1,23 @@
 /* This file will hold the main styles for your website. */
 
-$main-color: #313131;
-$main-background: #fefefe;
+$text-color: #313131;
+$border-color: #619069;
 $light-color: #6DC07B;
+$background-color: lighten($light-color, 29%);
+$background-light-color: #ffffff;
 $dark-color: darken($light-color, 29%);
 
 /* Base styling */
 body {
     font: 16px/1.5 Georgia, "Times New Roman", serif;
-    color: $main-color;
-    background-color: $main-background;
+    color: $text-color;
+    background-color: $background-light-color;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Georgia, "Times New Roman", serif;
     font-weight: normal;
     letter-spacing: normal;
+    color: $dark-color;
 }
 a:link,
 a:visited,
@@ -29,21 +32,13 @@ dd {
 }
 
 /* Header section */
-.region-branding-inner {
-    border-left: 1px solid $main-color;
-    border-right: 1px solid $main-color;
-    background-color: $dark-color;
-    padding: 0 18px;
-}
-.region-menu-inner {
-    border-left: 1px solid $main-color;
-    border-right: 1px solid $main-color;
-    border-bottom: 1px solid $main-color;
-    background: $light-color;
-}
 #zone-branding {
+    background-color: $dark-color;
+    .region-branding-inner {
+        padding: 0 11px;
+    }
     h1 {
-        font-size: 200%;
+        font-size: 175%;
         padding: 0.2em 0;
         margin: 0;
         
@@ -52,15 +47,18 @@ dd {
             color: $light-color;
             margin: 0;
             font-weight: normal;
-            text-shadow: 2px 2px 5px rgba(22,22,22,0.4);            
+            text-shadow: 2px 2px 5px rgba(22,22,22,0.4);
         }   
     }
 }
 
 #zone-menu {
+    background-color: $background-color;
+    border-top: 2px solid #fb968e;
     nav {
         font-family: Georgia, "Times New Roman", serif;
         font-size: 75%;
+        font-weight: normal;
         ul {
             li {
                 margin: 11px;
@@ -84,18 +82,24 @@ dd {
     }
     a {
         text-decoration: none;
-        color: $main-color;
-        &:hover { color: $dark-color; }
+        color: $dark-color;
+        background-color: $light-color;
+        display: inline-block;
+        width: 75px;
+        &:hover { color: $light-color; background: $dark-color; }
         &.active:hover, &.active-trail:hover { color: $light-color; }
     }    
 }
 
 /* Content section */
 .region-content-inner {
-    padding: 0 18px;
+    padding: 0 11px;
 }
 
 #zone-content {
+    background-color: White;
+    padding-bottom: 11px;
+    padding-top: 11px;
     h1.title, h1.node-title {
         font-size: 150%;
     }
@@ -112,39 +116,39 @@ dd {
 
     aside {
         .block {
-            border: 1px solid $main-color;
             margin: 1em 0;
+/*            border: 1px solid $border-color;*/
+            box-shadow: 2px 2px 3px rgba(22,22,22,0.4);;
         }
-        .block-without-title { border: none; }
         h2.block-title {
-            color: $main-color;
-            background-color: $dark-color;
-            background-image: -webkit-gradient(linear, left top, left bottom, from($dark-color), to($light-color)); 
-            background-image: -webkit-linear-gradient(top, $dark-color, $light-color); 
-            background-image:    -moz-linear-gradient(top, $dark-color, $light-color); 
-            background-image:     -ms-linear-gradient(top, $dark-color, $light-color); 
-            background-image:      -o-linear-gradient(top, $dark-color, $light-color); 
-            background-image:         linear-gradient(top, $dark-color, $light-color);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$dark-color', EndColorStr='$light-color'); 
+            color: $dark-color;
+            background-color: darken($background-color,10%);
+            border-bottom: 3px solid lighten($background-color, 8%);
             padding: 0 0.4em;
             margin: 0;
             font-size: 130%;
             a {
-                color: $main-color;
+                color: $dark-color;
                 text-decoration: none;
             }
         }
-        .content { margin: 0.6em; }
+        .content {
+            margin: 0.6em;
+        }
     }
 }
 
 /* Footer section */
+#section-footer {
+    padding-bottom: 22px;
+}
 #zone-footer {
     text-align: center;
-     a { color: $main-color; }
+    background-color: $background-color;
+    color: $dark-color;
+    font-size: 80%;
+     a { color: $dark-color; }
 }
 .region-footer-first-inner {
-    background: $light-color;
-    border: 1px solid $main-color;
-    padding: 6px 18px;
+    margin: 11px;
 }

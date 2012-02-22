@@ -1,26 +1,16 @@
 /* This file will hold styles that are loaded using the same media query as the narrow grid. */
+#section-header {
+  padding-top: 22px; }
+
 #zone-branding h1 {
   font-size: 400%; }
 
 #zone-menu nav {
-  font-size: 137.5%; }
-  #zone-menu nav ul {
-    line-height: 29px; }
-    #zone-menu nav ul li {
-      margin: 0;
-      padding: 7px 20px;
-      display: inline;
-      border: none;
-      width: auto;
-      height: 12px;
-      line-height: 12px;
-      vertical-align: middle; }
-
-.region-content-inner {
-  padding: 0 18px; }
-
-.region-sidebar-second-inner {
-  padding-right: 18px; }
+  font-size: 110%; }
+  #zone-menu nav ul li, #zone-menu nav ul a {
+    width: 130px;
+    height: 30px;
+    line-height: 30px; }
 
 #zone-content h1.title, #zone-content h1.node-title {
   font-size: 200%; }
@@ -30,5 +20,3 @@
 #zone-content section h2 {
   font-size: 130%;
   margin-bottom: 0; }
-#zone-content aside h2.block-title {
-  font-size: 150%; }
